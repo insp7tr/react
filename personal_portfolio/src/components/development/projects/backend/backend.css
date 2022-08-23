@@ -1,0 +1,60 @@
+.backend .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.backend .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+.backend .nav.nav-pills .nav-link.active {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#backend-tabs-tab-one {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px 0px 0px 20px;
+}
+.nav-link#backend-tabs-tab-one::before {
+  border-radius: 19px 0px 0px 19px;
+}
+.nav-link#backend-tabs-tab-two {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#backend-tabs-tab-three {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 20px 20px 0;
+}
+.nav-link#backend-tabs-tab-three::before {
+  border-radius: 0 19px 19px 0;
+}
+
+@media (max-width: 640px) {
+  .nav-link#backend-tabs-tab-one {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px 0px 0px 0px;
+  }
+  .nav-link#backend-tabs-tab-one::before {
+    border-radius: 19px 0px 0px 0px;
+  }
+  .nav-link#backend-tabs-tab-two {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 20px 0 0;
+  }
+  .nav-link#backend-tabs-tab-two::before {
+    border-radius: 0 19px 0px 0;
+  }
+  .nav-link#backend-tabs-tab-three {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 20px 20px;
+  }
+  .nav-link#backend-tabs-tab-three::before {
+    border-radius: 0 0 19px 19px;
+  }
+}
